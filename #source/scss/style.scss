@@ -1,0 +1,236 @@
+// обнуление 
+@import "nullstyle.scss";
+// шрифты
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+// body
+body{
+    font-family: 'Open Sans', sans-serif;  
+}
+
+// wrapper
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+// conteiner
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+// header
+.header {
+    height: 120px;
+    padding: 44px 0px;
+    &__body {
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        font-size: 20px;
+    }
+    &__list a{
+        color: #212121;
+    }
+    &__list li{
+        margin: 0px 35px 0px 0px;
+        position: relative;
+    &:last-child{
+        margin: 0px;
+    }
+    &:after{
+        content: " ";
+        opacity: 0;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+        background-color: #212121;
+        transition: opacity .2s ease-out;
+        display: block;
+    }
+    &:hover::after  {
+        opacity: 1;
+    }
+    }
+    &__logo {
+        font-size: 25px;
+        font-weight: 700;
+        color:#212121;
+    }
+}
+
+//intro
+//  вырезать фрагмент из cs6 ctrl shift alt s
+.intro {
+    background-image: url("../../img/Webt_01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    &__body {
+        margin-top: 150px;
+    }
+    &__title {
+        font-size: 60px;
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__row {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    &__column {
+        padding: 0 14px;
+    }   
+    &__link{     
+        border: 2px solid #fff;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        padding: 20px 50px;
+        color: #fff;
+    &:hover{
+        background-color: #00897b; 
+    }
+    }
+}
+// btn
+.btn {
+    
+}
+
+// about
+.body{
+    max-width: 630px;
+    margin: 0 auto;
+}
+.about {
+padding: 150px 0;
+text-align: center;
+height: 100vh;
+    &__title {
+    margin-bottom: 30px;
+    }
+    &__text {
+    margin-bottom: 140px;
+    }
+}
+.about { 
+    &__row { 
+    }
+    &__column {
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;      
+    }
+    &__item {
+        flex: 0 1 33.333%;
+        max-width: 259px;   
+    }
+    &__img {
+        flex: 0 0 62px;
+        margin-bottom: 20px;
+    }
+    &__img img{
+      
+    }
+    &__heading {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.text{
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+}
+// service
+.service {
+    height: 100vh;
+    padding: 90px 0;
+}
+
+.service__text {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+// columns
+.service {
+    
+    &__row {
+        padding: 50px 20px;
+        display: flex;
+        margin-right: -15px;
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        flex: 0 1 33.333%;
+        padding-right: 15px;
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        flex: 0 0 55px;
+    }
+
+    &__label {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    &__info {
+    font-size: 15px;
+    line-height: 25px;   
+    padding: 15px;
+    margin-bottom: 30px;
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        border: 3px solid #212121;
+        padding: 20px;
+        margin: 0 auto;
+        width: 150px;
+        color:#212121;
+       
+
+    }
+}
